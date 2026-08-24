@@ -1,0 +1,97 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+   --color-primary-dark: #0F172A;
+   --color-primary: #2563EB;
+   --color-secondary: #7C3AED;
+   --color-accent: #22D3EE;
+
+   --color-background: #F8FAFC;
+   --color-surface: #FFFFFF;
+
+   /* Textos para fundo claro */
+   --color-text-primary: #1E293B;
+   --color-text-secondary: #64748B;
+
+   /* Textos para fundo escuro */
+   --color-text-light: #F8FAFC;
+   --color-text-light-secondary: #CBD5E1;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+   background-color: var(--color-background);
+   color: var(--color-text-primary);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+   background-color: var(--color-primary-dark);
+   color: var(--color-text-light);
+}
+
+header h1 {
+   color: var(--color-text-light);
+}
+
+.logo-icon {
+   color: var(--color-accent);
+}
+
+header a {
+   color: var(--color-text-light);
+}
+
+
+/* =========================
+   HOME / HERO
+========================= */
+
+#home {
+   background-image: url("../assets/images/hero-bg-webdev.png");
+   color: var(--color-text-light);
+}
+
+#home h2,
+#home h3 {
+   color: var(--color-text-light);
+}
+
+#home p {
+   color: var(--color-text-light-secondary);
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+   background-color: var(--color-surface);
+   color: var(--color-text-primary);
+}
+
+.card p {
+   color: var(--color-text-secondary);
+}
