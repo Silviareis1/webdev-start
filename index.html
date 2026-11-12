@@ -1,11 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
+   <!-- Configurações básicas da página -->
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Título da aba do navegador -->
    <title>WebDev Start</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <!-- Arquivo CSS externo -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Favicons: padrão e versões para cada tema -->
+   <link rel="icon" type="image/x-icon" href="assets/images/favicon-sr-dev-flat-transparente.ico">
+   <link rel="icon" type="image/x-icon" href="assets/images/favicon-sr-dev-flat-transparente.ico"
+      media="(prefers-color-scheme: light)">
+   <link rel="icon" type="image/x-icon" href="assets/images/favicon-sr-dev-flat-claro.ico"
+      media="(prefers-color-scheme: dark)">
+   <!-- Informações para SEO -->
+   <meta name="description" content="WebDev Start - Aprenda desenvolvimento web do zero!">
+   <meta name="keywords" content="desenvolvimento web, HTML, CSS, JavaScript, programação, front-end, back-end">
+   <meta name="author" content="Silvia Reis">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
-   
+   <!-- Cabeçalho do site -->
+   <header class="cabecalho">
+      <!-- Logo / nome do projeto -->
+      <div class="logo">
+         <span class="logo-icon">&lt;/&gt;</span>
+         WebDev <span>Start</span>
+      </div>
+      <!-- Menu de navegação -->
+      <nav>
+         <ul class="menu">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#about">Sobre</a></li>
+         </ul>
+      </nav>
+   </header>
+   <!-- Conteúdo principal da página -->
+   <main>
+      <!-- Seção inicial / destaque principal -->
+      <section id="home" class="hero">
+         <div class="hero-text">
+            <h4 class="title-info">Webinar gratuito</h4>
+            <h1 class="hero-title">Comece sua jornada no <span class="title-highlight">desenvolvimento web</span></h1>
+            <p>
+               Aprenda os primeiros conceitos do HTML, CSS, JAVASCRIPT e GIT de forma prática e descomplicada.
+            </p>
+            <!-- Botão de chamada para ação -->
+            <button class="cta-button">
+               Inscreva-se gratuitamente <span aria-hidden="true">➜</span>
+            </button>
+            <div class="webinar-details">
+               <p><i class="fa-regular fa-calendar" aria-hidden="true"></i> 15/06/2026</p>
+               <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 19:00</p>
+               <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Online</p>
+            </div>
+         </div>
+         <div class="hero-image">
+            <img src="assets/images/editor-webdev.png" alt="Ilustração de um editor de código do projeto WebDev Start">
+            <title>Ilustração de um editor de código do projeto WebDev Start</title>
+         </div>
+      </section>
+
+      <!-- Seção de cursos / conteúdos -->
+      <section id="content">
+         <div class="courses">
+            <div class="card-inf">
+               <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+               <h4>Para iniciantes</h4>
+
+               <p class="texto">
+                  Conteúdo pensado para quem está começando do zero.
+               </p>
+            </div>
+
+            <div class="card-inf">
+               <i class="fa-solid fa-laptop" aria-hidden="true"></i>
+               <h4>100% Online</h4>
+               <p class="texto">
+                  Assista de onde estiver, ao vivo e com certificado.
+               </p>
+            </div>
+
+            <div class="card-inf">
+               <i class="fa-solid fa-gift" aria-hidden="true"></i>
+               <h4>Gratuito</h4>
+               <p class="texto">
+                  Webinar 100% gratuito com certificado digital.
+               </p>
+            </div>
+
+            <div class="card-inf">
+               <i class="fa-solid fa-award" aria-hidden="true"></i>
+               <h4>Certificado</h4>
+               <p class="texto">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               </p>
+            </div>
+         </div>
+
+         <h2 class="sub-title">Nossos Cursos</h2>
+         <div class="course-card">
+            <div class="card-icones">
+               <div class="icone"><i class="fa-brands fa-html5" aria-hidden="true"></i>
+               </div>
+               <div class="texto">
+                  <h4>HTML5</h4>
+                  <p>Aprenda a estruturar páginas web.</p>
+               </div>
+            </div>
+
+            <div class="card-icones">
+               <div class="icone">
+                  <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+               </div>
+               <div class="texto">
+                  <h4> CSS3</h4>
+                  <p>Aprenda a estilizar páginas web.</p>
+               </div>
+            </div>
+
+            <div class="card-icones">
+               <div class="icone">
+                  <i class="fa-brands fa-js" aria-hidden="true"></i>
+               </div>
+               <div class="texto">
+                  <h4>JavaScript</h4>
+                  <p>Aprenda a estruturar páginas web.</p>
+               </div>
+            </div>
+
+            <div class="card-icones">
+               <div class="icone">
+                  <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+               </div>
+               <div class="texto">
+                  <h4> GitHub</h4>
+                  <p>Aprenda a estilizar páginas web.</p>
+               </div>
+            </div>
+
+         </div>
+         <!-- Seção de contato com formulário -->
+         <section id="contact">
+            <div class="contato">
+               <h3>Garanta sua vaga</h3>
+
+               <!-- Formulário simples -->
+               <form action="#" method="post">
+                  <!-- <label for="name">Nome:</label> -->
+                  <input type="text" id="name" name="name" required placeholder="Nome completo">
+
+                  <!-- <label for="email">Email:</label> -->
+                  <input type="email" id="email" name="email" required placeholder="E-mail">
+
+                  <div class="cep">
+                     <!-- <label for="cep">CEP</label> -->
+                     <input type="text" id="cep" name="cep" required placeholder="CEP">
+                     <input type="text" id="button" name="button" required placeholder="Buscar CEP">
+                  </div>
+                  <div class="localizacao">
+                     <input type="text" id="cidade" name="cidade" required placeholder="Cidade">
+
+                     <input type="text" id="estado" name="estado" placeholder="Estado">
+                  </div>
+
+                  <textarea id="message" name="message" required placeholder="Mensagem (opcional)"></textarea>
+
+                  <button type="submit">Realizar inscriçaõ</button>
+               </form>
+            </div>
+
+            <div class="inf-evento">
+               <h3>Informações do evento</h3>
+
+               <div class="dados-evento">
+                  <p>Data</p>
+                  <p>15 de novembro de 2026</p>
+               </div>
+
+               <div class="dados-evento">
+                  <p>Horario</p>
+                  <p>18h às 21h</p>
+               </div>
+
+               <div class="dados-evento">
+                  <p>Formato</p>
+                  <p>Online e ao vivo</p>
+               </div>
+
+               <div class="dados-evento">
+                  <p>Nível</p>
+                  <p>Iniciante</p>
+               </div>
+
+               <div class="dados-evento">
+                  <p>Bônus</p>
+                  <p>Material de apoio + Certificado</p>
+               </div>
+            </div>
+
+         </section>
+         <!-- Seção sobre o projeto ou equipe -->
+         <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma equipe de desenvolvedores apaixonados por ensinar e compartilhar conhecimento sobre
+               desenvolvimento web.</p>
+         </section>
+      </section>
+   </main>
+   <script src="js/script.js" defer></script>
 </body>
-</html>!
+
+</html>
